@@ -1,0 +1,66 @@
+.orange-card{
+    background-color:rgb(226, 133, 37);
+    border-radius: 10px 0 0 10px;
+    padding: 2.5rem;
+    
+}
+.blue-card{
+    background-color:rgb(1, 105, 114);
+    padding: 2.5rem;
+}
+.cyan-card{
+    background-color:rgb(0, 64, 63);
+    border-radius: 0 10px 10px 0px; 
+    padding:2.5rem;
+}
+.card-container{
+    max-width: 920px;
+    display: flex;
+    margin-inline: auto;
+}
+.card{
+    display: flex;
+    margin: 3rem 1rem;
+    min-height: 100vh;
+    align-items: center;   
+}
+body{
+    margin: 0;
+}
+ h2{
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display';
+ }
+ p{
+   font-family: 'Lexend-Deca', sans-serif;
+   line-height: 1.75;
+   opacity: 0.5;
+   color: white;
+   margin-bottom: 4rem;
+ }
+ span{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color:  white;    
+    border-radius: 28px;
+}
+.orange-card span{
+    color: rgb(226, 133, 37);
+}
+.blue-card span{
+    color:rgb(1, 105, 114);  
+}
+.cyan-card span{
+    color:rgb(0, 64, 63);
+}
+@media(max-width:650px) {
+    .card{
+     flex-direction: column;
+    }
+    .orange-card{
+        border-radius:10px 10px 0 0;
+    }
+    .cyan-card{
+        border-radius: 0 0 10px 10px;
+    }
+}
